@@ -19,57 +19,43 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.contentContainer}>
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
-            <ThemedText>Whatsapp</ThemedText>
+          <Pressable  onPress={() => Linking.openURL('https://wa.me/18996125465')}>
+            <ThemedText style={styles.text}>Whatsapp</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/7.png')} style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/douglas-eduardo-a26327312/')}>
-            <ThemedText>Linkedin</ThemedText>
+            <ThemedText style={styles.text}>Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/8.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('mailto:douglasclassroomeduardo@gmail.com')}>
-            <ThemedText>Email</ThemedText>
+          <Pressable  onPress={() => Linking.openURL('mailto:du.insaurralde@gmail.com')}>
+            <ThemedText style={styles.text}>Email</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
           <Pressable onPress={() => Linking.openURL('https://github.com/Duduardoaajkk')}>
-            <ThemedText>Github</ThemedText>
+            <ThemedText style={styles.text}>Github</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/3.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://br.pinterest.com/douglasclassroomeduardo/')}>
-            <ThemedText>Pinterest</ThemedText>
-          </Pressable>
-        </ThemedView>
-
-        <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/4.png')} style={styles.icon} />
           <Pressable onPress={() => Linking.openURL('tel:5518998106469')}>
-            <ThemedText>Telefone</ThemedText>
+            <ThemedText style={styles.text}>Telefone</ThemedText>
           </Pressable>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
           <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/duduardoajk/')}>
-            <ThemedText>Instagram</ThemedText>
-          </Pressable>
-        </ThemedView>
-
-        <ThemedView style={styles.redes}>
-          <Image source={require('@/assets/images/6.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://x.com/douglsapenas')}>
-            <ThemedText>Twiter</ThemedText>
+            <ThemedText style={styles.text}>Instagram</ThemedText>
           </Pressable>
         </ThemedView>
 
@@ -96,6 +82,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 16,
     backgroundColor: 'white',
+    color: 'black',
     borderRadius: 100,
     padding: 10
   },
@@ -103,6 +90,12 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     marginRight: 8,
+  },
+  text: {
+    fontSize: 16,
+    color: "#353636",
+    textAlign: "center",
+    fontFamily: "Happy",
   },
   text: {
     fontSize: 16,

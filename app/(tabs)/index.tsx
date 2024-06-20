@@ -17,20 +17,16 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.tituloContainer}>
-        <ThemedText type="title">Bem vindo ao UniChat!</ThemedText>
+        <ThemedText type="title">Bem-vindo app-start</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.tituloContainer}>
-        <ThemedText type="subtitle">Sobre o app:</ThemedText>
+        <ThemedText type="subtitle">S O B R E</ThemedText>
       </ThemedView>
       <ThemedView style={styles.textoContainer}>
         <ThemedText>
-          <ThemedText type="defaultSemiBold">
-            UniChat é a solução definitiva para gerenciar todas as suas redes
-            sociais em um único lugar. Com UniChat, você pode conectar e
-            sincronizar suas contas de diversas plataformas, como Facebook,
-            Twitter, Instagram, LinkedIn e muitas outras, facilitando a
-            visualização e a interação com suas redes de forma centralizada.
+          <ThemedText type="defaultSemiBold" style={styles.text}>
+        O aplicativo   App-start é focado para deixar a movimentação entre apps e sites mais rapida, nele incluiem varios aplicativos presentes no cotidiano
           </ThemedText>
         </ThemedText>
       </ThemedView>
@@ -38,10 +34,13 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Sobre mim:</ThemedText>
       </ThemedView>
       <ThemedView style={styles.textoContainer}>
-        <ThemedText>
-          Me chamo Douglas Eduardo e estou fazendo um aplciativo que contenha
-          algumas redes socias
+        <ThemedText style={styles.text}>
+        Ola eu sou Eduardo Garção Insaurralde  venho aqui desenvolver esse app com o intuito de deixar a vida dos meus usuarios mais dinamico, sou estudante da escola etec um profissional da area de informatica
         </ThemedText>
+        <Image
+          source={require("@/assets/images/edugelado.jpeg")}
+          style={styles.aboutImage}
+        />
       </ThemedView> 
     </ParallaxScrollView>
   );
@@ -56,6 +55,7 @@ const styles = StyleSheet.create({
   textoContainer: {
     gap: 8,
     marginBottom: 8,
+    fontStyle: 'italic',
   },
   reactLogo: {
     height: 300,
@@ -63,5 +63,16 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: "absolute",
+  },
+  aboutImage: {
+    width: 200,
+    height: 200,
+    marginRight: 8,
+    borderRadius:100,
+    justifyContent:'center',
+    alignItems:'center',
+  },
+  text:{
+    fontStyle: 'italic',
   },
 });
