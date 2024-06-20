@@ -26,7 +26,7 @@ export default function TabTwoScreen() {
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/7.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/douglas-eduardo-a26327312/')}>
+          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/eduardo-insaurralde-424684260/')}>
             <ThemedText style={styles.text}>Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
@@ -40,7 +40,7 @@ export default function TabTwoScreen() {
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
-          <Pressable onPress={() => Linking.openURL('https://github.com/Duduardoaajkk')}>
+          <Pressable onPress={() => Linking.openURL('https://https://github.com/Dudugit23')}>
             <ThemedText style={styles.text}>Github</ThemedText>
           </Pressable>
         </ThemedView>
@@ -54,7 +54,7 @@ export default function TabTwoScreen() {
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/duduardoajk/')}>
+          <Pressable  onPress={() => Linking.openURL('https://www.instagram.com/edu_insuarralde/?next=%2F')}>
             <ThemedText style={styles.text}>Instagram</ThemedText>
           </Pressable>
         </ThemedView>
